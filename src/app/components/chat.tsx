@@ -29,22 +29,20 @@ function ChatInputField(
   }
 
   return (
-    <div className={styles.main}>
-      <div className={styles.searchContainer}>
-        <input
-          type="text"
-          placeholder="Ask a question ..."
-          className={styles.chatInput}
-          onChange={handleQuestionChange}
-          onKeyDown={handleKey}
-        />
-        <button className={styles.searchButton} onClick={handleQuestion}>
-          <svg className={styles.sendIcon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-          </svg>
-        </button>
-      </div >
-    </div>
+    <div className={styles.searchContainer}>
+      <input
+        type="text"
+        placeholder="Ask a question ..."
+        className={styles.chatInput}
+        onChange={handleQuestionChange}
+        onKeyDown={handleKey}
+      />
+      <button className={styles.searchButton} onClick={handleQuestion}>
+        <svg className={styles.sendIcon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+        </svg>
+      </button>
+    </div >
   );
 }
 

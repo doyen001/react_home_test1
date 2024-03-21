@@ -1,8 +1,52 @@
-.mainContainer {
+.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   height: 100vh;
   padding-bottom: 10vh;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mainContainer {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.chatContainer {
+  border: 2px solid #ddd;
+  overflow-y: scroll;
+  padding: 10px;
+  height: 400px;
+}
+
+.userContainer {
+  display: flex;
+  justify-content: end;
+}
+
+.userMessage {
+  padding: 10px;
+  background-color: #146CFE;
+  border-radius: 20px;
+  width: fit-content;
+  max-width: 300px;
+  margin-top: 10px;
+  color: white;
+}
+
+.aiMessage {
+  padding: 10px;
+  background-color: #C2CFF4;
+  border-radius: 20px;
+  width: fit-content;
+  margin-top: 10px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.inputContainer {
+  background-color: white;
+  padding: 10px 0;
 }
